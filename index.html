@@ -107,7 +107,9 @@
           infowindow.open(map, marker);
           var copyText = document.getElementById("copyTextArea");
           /* Set textarea to desired string */
-          copyText.value = "https://search.google.com/local/writereview?placeid="+place.place_id;
+          copyText.value =
+            "https://search.google.com/local/writereview?placeid=" +
+            place.place_id;
 
           var genURLButton = document.getElementById("url-gen");
           genURLButton.style = "background:red;color:white;";
@@ -148,10 +150,15 @@
       <span id="place-name" class="title"></span><br />
       <strong>Place ID:</strong> <span id="place-id"></span><br />
       <span id="place-address"></span><br />
-      <input type="button" id="url-gen" onclick="genURL()" value="Generate Google Review URL">
+      <input
+        type="button"
+        id="url-gen"
+        onclick="genURL()"
+        value="Generate Google Review URL"
+      />
       <label id="url-gen-label" for="url-gen">Generate</label>
     </div>
-    <input type="text" value="" id="copyTextArea" style="display:hidden;">
+    <input type="text" value="" id="copyTextArea" style="display: hidden" />
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
