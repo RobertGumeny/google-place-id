@@ -8,7 +8,7 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 43.6188, lng: -116.215 },
-    zoom: 13,
+    zoom: 7,
   });
   const input = document.getElementById("pac-input");
   const autocomplete = new google.maps.places.Autocomplete(input);
