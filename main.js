@@ -7,7 +7,7 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&libraries=places">
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 43.615, lng: 116.2023 },
+    center: { lat: 116.2023, lng: 43.615 },
     zoom: 13,
   });
   const input = document.getElementById("pac-input");
